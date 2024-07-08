@@ -1,0 +1,49 @@
+.custom-scrollbar {
+    height: 65%;
+    overflow: auto;    
+  }
+    
+.custom-scrollbar::-webkit-scrollbar {
+background-color: transparent;
+width: 3px;
+border-radius: 50pxx;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color:#3b82f6;
+    border-radius: 50px;
+    width: 3px;
+  }
+
+/* Style the checkbox input */
+.rounded-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px; /* Adjust the size to your preference */
+    height: 16px; /* Adjust the size to your preference */
+    border: 1px solid #333; /* Border color */
+    border-radius: 50%; /* Make it rounded */
+    position: relative;
+    margin: auto 0;
+  }
+  
+  /* Style the checkbox when it's checked */
+  .rounded-checkbox:checked {
+    background-color: green; /* Change the background color when checked */
+    border-color: green; /* Change the border color when checked */
+  }
+  
+  /* Style the checkmark inside the checkbox */
+  .rounded-checkbox:checked::before {
+    content: '\2713'; /* Unicode checkmark character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px; /* Adjust the size to your preference */
+    color: #fff; /* Checkmark color when checked */
+  }
+  
+  
+  
